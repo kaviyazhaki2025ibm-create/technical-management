@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechManage | Technical Management Solutions</title>
+  <style>
+    /* ----- BASIC STYLES ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ----- HEADER ----- */
+    header {
+      background: #0a2540;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00d1b2;
+    }
+
+    /* ----- HERO SECTION ----- */
+    .hero {
+      background: linear-gradient(135deg, #0a2540, #1d8cf8);
+      color: white;
+      padding: 100px 50px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00d1b2;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #00a58d;
+    }
+
+    /* ----- SERVICES SECTION ----- */
+    .services {
+      padding: 80px 50px;
+      background: white;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 30px;
+      margin-bottom: 40px;
+      color: #0a2540;
+    }
+
+    .service-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .service {
+      background: #f4f4f4;
+      padding: 25px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h3 {
+      color: #1d8cf8;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* ----- ABOUT SECTION ----- */
+    .about {
+      background: #eef3f9;
+      padding: 80px 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about img {
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    .about-text {
+      max-width: 500px;
+    }
+
+    .about-text h2 {
+      color: #0a2540;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* ----- CONTACT SECTION ----- */
+    .contact {
+      background: white;
+      text-align: center;
+      padding: 80px 50px;
+    }
+
+    .contact h2 {
+      color: #0a2540;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    .contact button {
+      background: #1d8cf8;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #166dbd;
+    }
+
+    /* ----- FOOTER ----- */
+    footer {
+      background: #0a2540;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* ----- RESPONSIVE ----- */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about {
+        flex-direction: column;
+      }
+
+      .about img {
+        width: 100%;
+      }
+
+      .service {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TechManage</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h2>Managing Technology for a Smarter Future</h2>
+    <p>We provide expert project management, technical consulting, and IT strategy solutions that help organizations innovate and grow.</p>
+    <a href="#services" class="btn">Explore Our Services</a>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="service">
+        <h3>Project Management</h3>
+        <p>End-to-end technical project planning, execution, and delivery with agile and modern methodologies.</p>
+      </div>
+      <div class="service">
+        <h3>IT Consulting</h3>
+        <p>Optimize your infrastructure and workflow with our expert consulting and digital transformation advice.</p>
+      </div>
+      <div class="service">
+        <h3>System Integration</h3>
+        <p>We connect your systems seamlessly for improved efficiency, data management, and scalability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <img src="https://images.unsplash.com/photo-1581091012184-5c1d7b5a30b3?auto=format&fit=crop&w=800&q=60" alt="Team working together">
+    <div class="about-text">
+      <h2>About TechManage</h2>
+      <p>TechManage is a forward-thinking technical management firm specializing in helping businesses harness the power of technology. From IT strategy to software development oversight, we ensure every project meets its full potential through expert guidance and efficient execution.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a project in mind? Let's discuss how we can help you achieve your goals.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 TechManage. All rights reserved.
+  </footer>
+</body>
+</html>
